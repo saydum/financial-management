@@ -2,6 +2,8 @@ FROM nginx:stable-alpine
 
 LABEL authors="saydumgamzabekovich"
 
+WORKDIR /etc/nginx/conf.d
+
 COPY ./conf/nginx.conf /etc/nginx/
 COPY ./conf/default.conf /etc/nginx/conf.d/
 
